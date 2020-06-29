@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +16,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, NewWordActivity.class);
+                Intent intent = new Intent(MainActivity.this, NewTodoActivity.class);
                 startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
             }
         });
@@ -87,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == NEW_WORD_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
-            Todos todos = new Todos(data.getStringExtra(NewWordActivity.EXTRA_REPLY));
+            Todos todos = new Todos(data.getStringExtra(NewTodoActivity.EXTRA_REPLY));
             mTodosViewModel.insert(todos);
         }
     }

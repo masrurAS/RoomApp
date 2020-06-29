@@ -6,7 +6,7 @@
     android:background="@color/colorScreenBackground"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".NewWordActivity">
+    tools:context=".NewTodoActivity">
 
 <EditText
     android:id="@+id/edit_word"

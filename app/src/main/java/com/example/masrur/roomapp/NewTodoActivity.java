@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class NewWordActivity extends AppCompatActivity {
+public class NewTodoActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY =
             "com.example.android.roomwordssample.REPLY";
 
