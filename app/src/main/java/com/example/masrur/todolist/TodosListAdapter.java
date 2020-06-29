@@ -1,7 +1,6 @@
-package com.example.masrur.roomapp;
+package com.example.masrur.todolist;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +10,6 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.chip.ChipGroup;
 
 import java.util.List;
 
